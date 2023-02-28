@@ -1,0 +1,93 @@
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-greyish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    background-color: var(--dark-blue);
+    text-align: center;
+    color: var(--light-cyan);
+    margin: 0;
+}
+
+h6 {
+    color: var(--neon-green);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    height: 100dvh;
+}
+
+.advice-card {
+    background-color: var(--dark-greyish-blue);
+    width: min(90vw, 475px);
+    padding: 1rem;
+    border-radius: 12px;
+    margin: auto;
+}
+
+div.dice {
+    background-color: var(--neon-green);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: 45px;
+    transition: ease-in-out 0.3s;
+}
+
+
+div.dice:hover {
+    box-shadow: 0 0 25px var(--neon-green);
+}
+
+.dice img {
+    display: block;
+    margin: auto;
+}
+
+#img-desktop {
+    display: block;
+    width: max(100%, 150px);
+}
+
+#img-mobile {
+    display: none;
+    margin: auto;
+    width: max(100%, 150px);
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 450px) {
+    #img-desktop {
+        display: none;
+    }
+
+    #img-mobile {
+        display: block;
+    }
+}

@@ -10,6 +10,16 @@
     box-sizing: border-box;
 }
 
+a {
+    color: var(--neon-green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--light-cyan);
+    text-decoration: none;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 28px;
@@ -28,6 +38,7 @@ h6 {
 
 .container {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     height: 100dvh;
 }

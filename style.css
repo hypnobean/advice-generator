@@ -10,15 +10,7 @@
     box-sizing: border-box;
 }
 
-a {
-    color: var(--neon-green);
-    text-decoration: none;
-}
 
-a:hover {
-    color: var(--light-cyan);
-    text-decoration: none;
-}
 
 body {
     font-family: 'Manrope', sans-serif;
@@ -89,9 +81,14 @@ div.dice:hover {
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--neon-green);
+    text-decoration: none;
 }
 
+
+.attribution a:hover {
+    color: var(--light-cyan);
+}
 
 @media screen and (max-width: 450px) {
     #img-desktop {
